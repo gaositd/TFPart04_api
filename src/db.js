@@ -14,7 +14,7 @@ if(process.env.NODE_ENV !== 'production'){
   });
 }else{
   sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
-    port:process.env.PORT,
+    port:process.env.PG_PORT,
     host: DB_HOST,
     dialect: DB_DIALECT,
     dialectOptions: {
